@@ -11,25 +11,20 @@ public class Mountain {
         this.height = height;
     }
 
-    public Mountain(String name) {
-        this.name = name;
-        this.location = "";
-        this.height = 0;
+    public String getName() {
+        return name;
     }
 
-    public String toString() { return name; }
-
-    public String info() {
-        String str=name;
-        str+=" is located in ";
-        str+=location;
-        str+=" and has an height of ";
-        str+=Integer.toString(height);
-        str+="m.";
-        return str;
+    public String getLocation() {
+        return location;
     }
 
-    public void setHeight (int newHeight) {
-        height=newHeight;
+    public int getHeight() {
+        return height;
+    }
+
+    @Override
+    public String toString() {
+        return name;
     }
 }
