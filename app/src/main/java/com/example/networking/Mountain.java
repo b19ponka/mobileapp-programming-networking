@@ -16,4 +16,20 @@ public class Mountain {
         this.location = "";
         this.height = 0;
     }
+
+    public String toString() { return name; }
+
+    public String info() {
+        String str=name;
+        str+=" is located in ";
+        str+=location;
+        str+=" and has an height of ";
+        str+=Integer.toString(height);
+        str+="m.";
+        return str;
+    }
+
+    public void setHeight (int newHeight) {
+        height=newHeight;
+    }
 }
